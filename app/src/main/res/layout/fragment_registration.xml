@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationFragment"
+
+    android:background="@color/lightorange">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/backgtound_png"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration For Movieflix"
+            android:textSize="30dp"
+            android:fontFamily="@font/baloo"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="50dp"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:id="@+id/circularIMG"
+            android:layout_gravity="center"
+            android:src="@drawable/profile"
+            android:layout_marginBottom="10dp"/>
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameET_Reg"
+            android:hint="User Name"
+            android:padding="5dp"
+            android:layout_marginBottom="15dp"
+            android:drawableRight="@drawable/username"            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender"
+                android:text="Gender"
+                android:layout_marginEnd="20dp"
+                android:drawableRight="@drawable/gender"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:checked="true"
+                    android:id="@+id/radioMale"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/radioFemale"/>
+
+
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressET_Reg"
+            android:hint="Address"
+            android:inputType="text"
+            android:padding="5dp"
+            android:drawableRight="@drawable/home"
+            android:layout_marginBottom="15dp"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneET_Reg"
+            android:hint="Phone"
+            android:inputType="number"
+            android:padding="5dp"
+            android:drawableRight="@drawable/phone"
+            android:layout_marginBottom="15dp"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailET_Reg"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:drawableRight="@drawable/email"
+            android:padding="5dp"
+            android:layout_marginBottom="15dp"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passET_Reg"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/password"
+            android:padding="5dp"/>
+
+
+        <Button
+            android:layout_marginTop="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_singup"
+            android:background="#8BC34A"
+            android:text="SingUp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>
